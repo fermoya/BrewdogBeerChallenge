@@ -3,43 +3,218 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		177B1C0C23112C1600B2ABE5 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177B1C0323112C1600B2ABE5 /* Repository.framework */; };
+		177B1C1323112C1600B2ABE5 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B1C1223112C1600B2ABE5 /* RepositoryTests.swift */; };
+		177B1C1523112C1600B2ABE5 /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = 177B1C0523112C1600B2ABE5 /* Repository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		177B1C1823112C1600B2ABE5 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177B1C0323112C1600B2ABE5 /* Repository.framework */; };
+		177B1C1923112C1600B2ABE5 /* Repository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 177B1C0323112C1600B2ABE5 /* Repository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		177B1C2A23112C3100B2ABE5 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 177B1C2823112C3100B2ABE5 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		177B1C2D23112C3100B2ABE5 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177B1C2623112C3100B2ABE5 /* Domain.framework */; };
+		177B1C2E23112C3100B2ABE5 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 177B1C2623112C3100B2ABE5 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		177B1C3323112CF600B2ABE5 /* PunkApiWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B1C3223112CF600B2ABE5 /* PunkApiWebservice.swift */; };
+		177B1C3523112D1700B2ABE5 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B1C3423112D1700B2ABE5 /* DataStore.swift */; };
+		177B1C3723112E1C00B2ABE5 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B1C3623112E1C00B2ABE5 /* Beer.swift */; };
+		177B1C392311306B00B2ABE5 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B1C382311306B00B2ABE5 /* Ingredients.swift */; };
+		177B1C3B231130B400B2ABE5 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B1C3A231130B400B2ABE5 /* Measure.swift */; };
+		177B1C3D2311325B00B2ABE5 /* BrewMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B1C3C2311325B00B2ABE5 /* BrewMethod.swift */; };
+		177B1C3F2311340F00B2ABE5 /* Optinal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B1C3E2311340F00B2ABE5 /* Optinal+Utils.swift */; };
+		177B1C4423113A3500B2ABE5 /* PunkApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B1C4323113A3500B2ABE5 /* PunkApiEndpoints.swift */; };
+		177B1C4F2311412000B2ABE5 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177B1C2623112C3100B2ABE5 /* Domain.framework */; };
+		177B1C572311525500B2ABE5 /* PunkApiMappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B1C562311525500B2ABE5 /* PunkApiMappers.swift */; };
 		17E346512311236C00B625EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E346502311236C00B625EB /* AppDelegate.swift */; };
-		17E346532311236C00B625EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E346522311236C00B625EB /* ViewController.swift */; };
-		17E346562311236C00B625EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E346542311236C00B625EB /* Main.storyboard */; };
 		17E346582311236D00B625EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E346572311236D00B625EB /* Assets.xcassets */; };
 		17E3465B2311236D00B625EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E346592311236D00B625EB /* LaunchScreen.storyboard */; };
+		26607C647C945061CFD6EF78 /* Pods_BrewdogBeerChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C305C23E203CE82A1F432443 /* Pods_BrewdogBeerChallenge.framework */; };
+		F4D746F5EEE8C5EBAEE3EE1B /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAB6E42B474F9F4E9E3669F /* Pods_Repository.framework */; };
+		F60951846776B2EA2A231F39 /* Pods_RepositoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D20B25C8FC4D34DBA49999 /* Pods_RepositoryTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		177B1C0D23112C1600B2ABE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17E346452311236C00B625EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177B1C0223112C1600B2ABE5;
+			remoteInfo = Repository;
+		};
+		177B1C0F23112C1600B2ABE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17E346452311236C00B625EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17E3464C2311236C00B625EB;
+			remoteInfo = BrewdogBeerChallenge;
+		};
+		177B1C1623112C1600B2ABE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17E346452311236C00B625EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177B1C0223112C1600B2ABE5;
+			remoteInfo = Repository;
+		};
+		177B1C2B23112C3100B2ABE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17E346452311236C00B625EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177B1C2523112C3100B2ABE5;
+			remoteInfo = Domain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		177B1C1F23112C1600B2ABE5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				177B1C2E23112C3100B2ABE5 /* Domain.framework in Embed Frameworks */,
+				177B1C1923112C1600B2ABE5 /* Repository.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		177B1C0323112C1600B2ABE5 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		177B1C0523112C1600B2ABE5 /* Repository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		177B1C0623112C1600B2ABE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177B1C0B23112C1600B2ABE5 /* RepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		177B1C1223112C1600B2ABE5 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		177B1C1423112C1600B2ABE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177B1C2623112C3100B2ABE5 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		177B1C2823112C3100B2ABE5 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		177B1C2923112C3100B2ABE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177B1C3223112CF600B2ABE5 /* PunkApiWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiWebservice.swift; sourceTree = "<group>"; };
+		177B1C3423112D1700B2ABE5 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		177B1C3623112E1C00B2ABE5 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		177B1C382311306B00B2ABE5 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		177B1C3A231130B400B2ABE5 /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		177B1C3C2311325B00B2ABE5 /* BrewMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethod.swift; sourceTree = "<group>"; };
+		177B1C3E2311340F00B2ABE5 /* Optinal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optinal+Utils.swift"; sourceTree = "<group>"; };
+		177B1C4323113A3500B2ABE5 /* PunkApiEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiEndpoints.swift; sourceTree = "<group>"; };
+		177B1C562311525500B2ABE5 /* PunkApiMappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiMappers.swift; sourceTree = "<group>"; };
 		17E3464D2311236C00B625EB /* BrewdogBeerChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewdogBeerChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E346502311236C00B625EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17E346522311236C00B625EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		17E346552311236C00B625EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17E346572311236D00B625EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17E3465A2311236D00B625EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17E3465C2311236D00B625EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59A253F631A51D8145C0826B /* Pods-RepositoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.release.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D574F3B5FC95C33CA1DF81A /* Pods-Repository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.debug.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.debug.xcconfig"; sourceTree = "<group>"; };
+		AB081C30221BA7F49954BF9F /* Pods-BrewdogBeerChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewdogBeerChallenge.debug.xcconfig"; path = "Target Support Files/Pods-BrewdogBeerChallenge/Pods-BrewdogBeerChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		C305C23E203CE82A1F432443 /* Pods_BrewdogBeerChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewdogBeerChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB928C56256EB735290139ED /* Pods-BrewdogBeerChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewdogBeerChallenge.release.xcconfig"; path = "Target Support Files/Pods-BrewdogBeerChallenge/Pods-BrewdogBeerChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		D365CF28DFC8AF7F3C50A1C2 /* Pods-Repository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.release.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.release.xcconfig"; sourceTree = "<group>"; };
+		E4D20B25C8FC4D34DBA49999 /* Pods_RepositoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepositoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA07F2823947F036AD3F6847 /* Pods-RepositoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.debug.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFAB6E42B474F9F4E9E3669F /* Pods_Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17E3464A2311236C00B625EB /* Frameworks */ = {
+		177B1C0023112C1600B2ABE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177B1C4F2311412000B2ABE5 /* Domain.framework in Frameworks */,
+				F4D746F5EEE8C5EBAEE3EE1B /* Pods_Repository.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177B1C0823112C1600B2ABE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177B1C0C23112C1600B2ABE5 /* Repository.framework in Frameworks */,
+				F60951846776B2EA2A231F39 /* Pods_RepositoryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177B1C2323112C3100B2ABE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		17E3464A2311236C00B625EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177B1C2D23112C3100B2ABE5 /* Domain.framework in Frameworks */,
+				177B1C1823112C1600B2ABE5 /* Repository.framework in Frameworks */,
+				26607C647C945061CFD6EF78 /* Pods_BrewdogBeerChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		177B1C0423112C1600B2ABE5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				177B1C4523113E1400B2ABE5 /* PunkApi */,
+				177B1C0523112C1600B2ABE5 /* Repository.h */,
+				177B1C0623112C1600B2ABE5 /* Info.plist */,
+				177B1C3423112D1700B2ABE5 /* DataStore.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		177B1C1123112C1600B2ABE5 /* RepositoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				177B1C1223112C1600B2ABE5 /* RepositoryTests.swift */,
+				177B1C1423112C1600B2ABE5 /* Info.plist */,
+			);
+			path = RepositoryTests;
+			sourceTree = "<group>";
+		};
+		177B1C2723112C3100B2ABE5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				177B1C2823112C3100B2ABE5 /* Domain.h */,
+				177B1C2923112C3100B2ABE5 /* Info.plist */,
+				177B1C3623112E1C00B2ABE5 /* Beer.swift */,
+				177B1C382311306B00B2ABE5 /* Ingredients.swift */,
+				177B1C3A231130B400B2ABE5 /* Measure.swift */,
+				177B1C3C2311325B00B2ABE5 /* BrewMethod.swift */,
+				177B1C3E2311340F00B2ABE5 /* Optinal+Utils.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		177B1C4523113E1400B2ABE5 /* PunkApi */ = {
+			isa = PBXGroup;
+			children = (
+				177B1C4623113E2300B2ABE5 /* Mappers */,
+				177B1C3223112CF600B2ABE5 /* PunkApiWebservice.swift */,
+				177B1C4323113A3500B2ABE5 /* PunkApiEndpoints.swift */,
+			);
+			path = PunkApi;
+			sourceTree = "<group>";
+		};
+		177B1C4623113E2300B2ABE5 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				177B1C562311525500B2ABE5 /* PunkApiMappers.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
 		17E346442311236C00B625EB = {
 			isa = PBXGroup;
 			children = (
 				17E3464F2311236C00B625EB /* BrewdogBeerChallenge */,
+				177B1C0423112C1600B2ABE5 /* Repository */,
+				177B1C1123112C1600B2ABE5 /* RepositoryTests */,
+				177B1C2723112C3100B2ABE5 /* Domain */,
 				17E3464E2311236C00B625EB /* Products */,
+				44FC8135F6BDC9A8BEC13717 /* Pods */,
+				71BE4B554AA495304CC178D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +222,9 @@
 			isa = PBXGroup;
 			children = (
 				17E3464D2311236C00B625EB /* BrewdogBeerChallenge.app */,
+				177B1C0323112C1600B2ABE5 /* Repository.framework */,
+				177B1C0B23112C1600B2ABE5 /* RepositoryTests.xctest */,
+				177B1C2623112C3100B2ABE5 /* Domain.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,30 +232,141 @@
 		17E3464F2311236C00B625EB /* BrewdogBeerChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				17E346622311260E00B625EB /* Support */,
 				17E346502311236C00B625EB /* AppDelegate.swift */,
-				17E346522311236C00B625EB /* ViewController.swift */,
-				17E346542311236C00B625EB /* Main.storyboard */,
-				17E346572311236D00B625EB /* Assets.xcassets */,
-				17E346592311236D00B625EB /* LaunchScreen.storyboard */,
-				17E3465C2311236D00B625EB /* Info.plist */,
 			);
 			path = BrewdogBeerChallenge;
 			sourceTree = "<group>";
 		};
+		17E346622311260E00B625EB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				17E346572311236D00B625EB /* Assets.xcassets */,
+				17E346592311236D00B625EB /* LaunchScreen.storyboard */,
+				17E3465C2311236D00B625EB /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		44FC8135F6BDC9A8BEC13717 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB081C30221BA7F49954BF9F /* Pods-BrewdogBeerChallenge.debug.xcconfig */,
+				CB928C56256EB735290139ED /* Pods-BrewdogBeerChallenge.release.xcconfig */,
+				9D574F3B5FC95C33CA1DF81A /* Pods-Repository.debug.xcconfig */,
+				D365CF28DFC8AF7F3C50A1C2 /* Pods-Repository.release.xcconfig */,
+				EA07F2823947F036AD3F6847 /* Pods-RepositoryTests.debug.xcconfig */,
+				59A253F631A51D8145C0826B /* Pods-RepositoryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		71BE4B554AA495304CC178D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C305C23E203CE82A1F432443 /* Pods_BrewdogBeerChallenge.framework */,
+				EFAB6E42B474F9F4E9E3669F /* Pods_Repository.framework */,
+				E4D20B25C8FC4D34DBA49999 /* Pods_RepositoryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		177B1BFE23112C1600B2ABE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177B1C1523112C1600B2ABE5 /* Repository.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177B1C2123112C3100B2ABE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177B1C2A23112C3100B2ABE5 /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		17E3464C2311236C00B625EB /* BrewdogBeerChallenge */ = {
+		177B1C0223112C1600B2ABE5 /* Repository */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17E3465F2311236D00B625EB /* Build configuration list for PBXNativeTarget "BrewdogBeerChallenge" */;
+			buildConfigurationList = 177B1C1E23112C1600B2ABE5 /* Build configuration list for PBXNativeTarget "Repository" */;
 			buildPhases = (
-				17E346492311236C00B625EB /* Sources */,
-				17E3464A2311236C00B625EB /* Frameworks */,
-				17E3464B2311236C00B625EB /* Resources */,
+				93CCAE4035427BA77C234D3B /* [CP] Check Pods Manifest.lock */,
+				177B1BFE23112C1600B2ABE5 /* Headers */,
+				177B1BFF23112C1600B2ABE5 /* Sources */,
+				177B1C0023112C1600B2ABE5 /* Frameworks */,
+				177B1C0123112C1600B2ABE5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = Repository;
+			productName = Repository;
+			productReference = 177B1C0323112C1600B2ABE5 /* Repository.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		177B1C0A23112C1600B2ABE5 /* RepositoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177B1C2023112C1600B2ABE5 /* Build configuration list for PBXNativeTarget "RepositoryTests" */;
+			buildPhases = (
+				7870ED9D3926C8246F584049 /* [CP] Check Pods Manifest.lock */,
+				177B1C0723112C1600B2ABE5 /* Sources */,
+				177B1C0823112C1600B2ABE5 /* Frameworks */,
+				177B1C0923112C1600B2ABE5 /* Resources */,
+				6FD7DF18907E1D6DAE7B5663 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				177B1C0E23112C1600B2ABE5 /* PBXTargetDependency */,
+				177B1C1023112C1600B2ABE5 /* PBXTargetDependency */,
+			);
+			name = RepositoryTests;
+			productName = RepositoryTests;
+			productReference = 177B1C0B23112C1600B2ABE5 /* RepositoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		177B1C2523112C3100B2ABE5 /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177B1C2F23112C3100B2ABE5 /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				177B1C2123112C3100B2ABE5 /* Headers */,
+				177B1C2223112C3100B2ABE5 /* Sources */,
+				177B1C2323112C3100B2ABE5 /* Frameworks */,
+				177B1C2423112C3100B2ABE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = 177B1C2623112C3100B2ABE5 /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17E3464C2311236C00B625EB /* BrewdogBeerChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17E3465F2311236D00B625EB /* Build configuration list for PBXNativeTarget "BrewdogBeerChallenge" */;
+			buildPhases = (
+				BDAC9BD96123F227BCDD070F /* [CP] Check Pods Manifest.lock */,
+				17E346492311236C00B625EB /* Sources */,
+				17E3464A2311236C00B625EB /* Frameworks */,
+				17E3464B2311236C00B625EB /* Resources */,
+				FF86B9AEF3E4744403298EFD /* [CP] Embed Pods Frameworks */,
+				177B1C1F23112C1600B2ABE5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				177B1C1723112C1600B2ABE5 /* PBXTargetDependency */,
+				177B1C2C23112C3100B2ABE5 /* PBXTargetDependency */,
 			);
 			name = BrewdogBeerChallenge;
 			productName = BrewdogBeerChallenge;
@@ -94,6 +383,18 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Fernando Moya de Rivas";
 				TargetAttributes = {
+					177B1C0223112C1600B2ABE5 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					177B1C0A23112C1600B2ABE5 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 17E3464C2311236C00B625EB;
+					};
+					177B1C2523112C3100B2ABE5 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
 					17E3464C2311236C00B625EB = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -113,44 +414,215 @@
 			projectRoot = "";
 			targets = (
 				17E3464C2311236C00B625EB /* BrewdogBeerChallenge */,
+				177B1C0223112C1600B2ABE5 /* Repository */,
+				177B1C0A23112C1600B2ABE5 /* RepositoryTests */,
+				177B1C2523112C3100B2ABE5 /* Domain */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		177B1C0123112C1600B2ABE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177B1C0923112C1600B2ABE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177B1C2423112C3100B2ABE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17E3464B2311236C00B625EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				17E3465B2311236D00B625EB /* LaunchScreen.storyboard in Resources */,
 				17E346582311236D00B625EB /* Assets.xcassets in Resources */,
-				17E346562311236C00B625EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6FD7DF18907E1D6DAE7B5663 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7870ED9D3926C8246F584049 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RepositoryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93CCAE4035427BA77C234D3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Repository-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDAC9BD96123F227BCDD070F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrewdogBeerChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF86B9AEF3E4744403298EFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrewdogBeerChallenge/Pods-BrewdogBeerChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrewdogBeerChallenge/Pods-BrewdogBeerChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrewdogBeerChallenge/Pods-BrewdogBeerChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		177B1BFF23112C1600B2ABE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177B1C3323112CF600B2ABE5 /* PunkApiWebservice.swift in Sources */,
+				177B1C4423113A3500B2ABE5 /* PunkApiEndpoints.swift in Sources */,
+				177B1C3523112D1700B2ABE5 /* DataStore.swift in Sources */,
+				177B1C572311525500B2ABE5 /* PunkApiMappers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177B1C0723112C1600B2ABE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177B1C1323112C1600B2ABE5 /* RepositoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177B1C2223112C3100B2ABE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177B1C3D2311325B00B2ABE5 /* BrewMethod.swift in Sources */,
+				177B1C3F2311340F00B2ABE5 /* Optinal+Utils.swift in Sources */,
+				177B1C392311306B00B2ABE5 /* Ingredients.swift in Sources */,
+				177B1C3723112E1C00B2ABE5 /* Beer.swift in Sources */,
+				177B1C3B231130B400B2ABE5 /* Measure.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17E346492311236C00B625EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E346532311236C00B625EB /* ViewController.swift in Sources */,
 				17E346512311236C00B625EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		17E346542311236C00B625EB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17E346552311236C00B625EB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		177B1C0E23112C1600B2ABE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177B1C0223112C1600B2ABE5 /* Repository */;
+			targetProxy = 177B1C0D23112C1600B2ABE5 /* PBXContainerItemProxy */;
 		};
+		177B1C1023112C1600B2ABE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17E3464C2311236C00B625EB /* BrewdogBeerChallenge */;
+			targetProxy = 177B1C0F23112C1600B2ABE5 /* PBXContainerItemProxy */;
+		};
+		177B1C1723112C1600B2ABE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177B1C0223112C1600B2ABE5 /* Repository */;
+			targetProxy = 177B1C1623112C1600B2ABE5 /* PBXContainerItemProxy */;
+		};
+		177B1C2C23112C3100B2ABE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177B1C2523112C3100B2ABE5 /* Domain */;
+			targetProxy = 177B1C2B23112C3100B2ABE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		17E346592311236D00B625EB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -162,6 +634,168 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		177B1C1A23112C1600B2ABE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D574F3B5FC95C33CA1DF81A /* Pods-Repository.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Repository/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Repository;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		177B1C1B23112C1600B2ABE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D365CF28DFC8AF7F3C50A1C2 /* Pods-Repository.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Repository/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Repository;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		177B1C1C23112C1600B2ABE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA07F2823947F036AD3F6847 /* Pods-RepositoryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				INFOPLIST_FILE = RepositoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.RepositoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrewdogBeerChallenge.app/BrewdogBeerChallenge";
+			};
+			name = Debug;
+		};
+		177B1C1D23112C1600B2ABE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59A253F631A51D8145C0826B /* Pods-RepositoryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				INFOPLIST_FILE = RepositoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.RepositoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrewdogBeerChallenge.app/BrewdogBeerChallenge";
+			};
+			name = Release;
+		};
+		177B1C3023112C3100B2ABE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		177B1C3123112C3100B2ABE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		17E3465D2311236D00B625EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -280,11 +914,13 @@
 		};
 		17E346602311236D00B625EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB081C30221BA7F49954BF9F /* Pods-BrewdogBeerChallenge.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPBB5C5CRP;
-				INFOPLIST_FILE = BrewdogBeerChallenge/Info.plist;
+				INFOPLIST_FILE = BrewdogBeerChallenge/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +934,13 @@
 		};
 		17E346612311236D00B625EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB928C56256EB735290139ED /* Pods-BrewdogBeerChallenge.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPBB5C5CRP;
-				INFOPLIST_FILE = BrewdogBeerChallenge/Info.plist;
+				INFOPLIST_FILE = BrewdogBeerChallenge/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +955,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		177B1C1E23112C1600B2ABE5 /* Build configuration list for PBXNativeTarget "Repository" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177B1C1A23112C1600B2ABE5 /* Debug */,
+				177B1C1B23112C1600B2ABE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177B1C2023112C1600B2ABE5 /* Build configuration list for PBXNativeTarget "RepositoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177B1C1C23112C1600B2ABE5 /* Debug */,
+				177B1C1D23112C1600B2ABE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177B1C2F23112C3100B2ABE5 /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177B1C3023112C3100B2ABE5 /* Debug */,
+				177B1C3123112C3100B2ABE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		17E346482311236C00B625EB /* Build configuration list for PBXProject "BrewdogBeerChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
