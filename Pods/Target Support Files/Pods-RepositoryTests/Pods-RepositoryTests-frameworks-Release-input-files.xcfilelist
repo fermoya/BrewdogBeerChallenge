@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework
+${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
