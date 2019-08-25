@@ -4,8 +4,14 @@
 target 'BrewdogBeerChallenge' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for BrewdogBeerChallenge
+end
+
+target 'UserInterface' do
+  use_frameworks!
+  
+  pod 'Kingfisher', '~> 5.0'
 end
 
 target 'Repository' do
