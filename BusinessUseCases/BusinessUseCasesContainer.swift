@@ -21,4 +21,8 @@ public final class BusinessUseCasesContainer {
         return DataStorePager(dataStore: repositoryContainer.dataStore)
     }
     
+    public var recipeManagerBuilder: RecipeManagerBuilder {
+        return RecipeManagerBuilder()
+    }
+    
 }

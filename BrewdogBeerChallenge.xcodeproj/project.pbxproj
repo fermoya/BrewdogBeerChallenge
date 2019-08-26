@@ -57,6 +57,15 @@
 		17A586CE2312AE1300E866F8 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A586CC2312AE1300E866F8 /* BeerTableViewCell.xib */; };
 		17A586D52312B07400E866F8 /* NSObject+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A586CF2312AE8400E866F8 /* NSObject+Utils.swift */; };
 		17A586D72312C9E900E866F8 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A586D62312C9E900E866F8 /* UIView+Utils.swift */; };
+		17C3C8332313205700A457A7 /* RecipeStepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3C8312313205700A457A7 /* RecipeStepTableViewCell.swift */; };
+		17C3C8342313205700A457A7 /* RecipeStepTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C3C8322313205700A457A7 /* RecipeStepTableViewCell.xib */; };
+		17C3C8372313255800A457A7 /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3C8362313255800A457A7 /* RecipeManager.swift */; };
+		17C3C8392313B3FB00A457A7 /* RecipeStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3C8382313B3FB00A457A7 /* RecipeStep.swift */; };
+		17C3C83B2313C9D300A457A7 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3C83A2313C9D300A457A7 /* CountdownTimer.swift */; };
+		17C3C8432313CCE700A457A7 /* EnhancedTimerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3C8422313CCE700A457A7 /* EnhancedTimerTest.swift */; };
+		17C3C8452313CCE700A457A7 /* BusinessUseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A586B82312A00200E866F8 /* BusinessUseCases.framework */; };
+		17C3C84E2313D03000A457A7 /* DataStorePagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3C84D2313D03000A457A7 /* DataStorePagerTests.swift */; };
+		17C3C8502313D5D800A457A7 /* RecipeManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3C84F2313D5D800A457A7 /* RecipeManagerTests.swift */; };
 		17E346512311236C00B625EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E346502311236C00B625EB /* AppDelegate.swift */; };
 		17E346582311236D00B625EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E346572311236D00B625EB /* Assets.xcassets */; };
 		17E3465B2311236D00B625EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E346592311236D00B625EB /* LaunchScreen.storyboard */; };
@@ -108,6 +117,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 17A586B72312A00200E866F8;
 			remoteInfo = BusinessUseCases;
+		};
+		17C3C8462313CCE700A457A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17E346452311236C00B625EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17A586B72312A00200E866F8;
+			remoteInfo = BusinessUseCases;
+		};
+		17C3C84B2313CE8100A457A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17E346452311236C00B625EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17E3464C2311236C00B625EB;
+			remoteInfo = BrewdogBeerChallenge;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -178,6 +201,16 @@
 		17A586CC2312AE1300E866F8 /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
 		17A586CF2312AE8400E866F8 /* NSObject+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Utils.swift"; sourceTree = "<group>"; };
 		17A586D62312C9E900E866F8 /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		17C3C8312313205700A457A7 /* RecipeStepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepTableViewCell.swift; sourceTree = "<group>"; };
+		17C3C8322313205700A457A7 /* RecipeStepTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeStepTableViewCell.xib; sourceTree = "<group>"; };
+		17C3C8362313255800A457A7 /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
+		17C3C8382313B3FB00A457A7 /* RecipeStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStep.swift; sourceTree = "<group>"; };
+		17C3C83A2313C9D300A457A7 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
+		17C3C8402313CCE700A457A7 /* BusinessUseCasesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessUseCasesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C3C8422313CCE700A457A7 /* EnhancedTimerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedTimerTest.swift; sourceTree = "<group>"; };
+		17C3C8442313CCE700A457A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C3C84D2313D03000A457A7 /* DataStorePagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorePagerTests.swift; sourceTree = "<group>"; };
+		17C3C84F2313D5D800A457A7 /* RecipeManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManagerTests.swift; sourceTree = "<group>"; };
 		17E3464D2311236C00B625EB /* BrewdogBeerChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewdogBeerChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E346502311236C00B625EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17E346572311236D00B625EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -236,6 +269,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C3C83D2313CCE700A457A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C3C8452313CCE700A457A7 /* BusinessUseCases.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +400,7 @@
 		1728F48B231298CA006DB955 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				17A586D823131EA100E866F8 /* Cells */,
 				17A586AF23129C8F00E866F8 /* BeerDetailsViewController.swift */,
 				17A586B023129C8F00E866F8 /* BeerDetailsViewController.xib */,
 			);
@@ -464,6 +506,7 @@
 		17A586B92312A00200E866F8 /* BusinessUseCases */ = {
 			isa = PBXGroup;
 			children = (
+				17C3C8352313253600A457A7 /* Recipe */,
 				17A586C62312A02C00E866F8 /* DataStorePager */,
 				17A586BA2312A00200E866F8 /* BusinessUseCases.h */,
 				17A586BB2312A00200E866F8 /* Info.plist */,
@@ -508,6 +551,36 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		17A586D823131EA100E866F8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				17C3C8312313205700A457A7 /* RecipeStepTableViewCell.swift */,
+				17C3C8322313205700A457A7 /* RecipeStepTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		17C3C8352313253600A457A7 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				17C3C8362313255800A457A7 /* RecipeManager.swift */,
+				17C3C8382313B3FB00A457A7 /* RecipeStep.swift */,
+				17C3C83A2313C9D300A457A7 /* CountdownTimer.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		17C3C8412313CCE700A457A7 /* BusinessUseCasesTests */ = {
+			isa = PBXGroup;
+			children = (
+				17C3C8422313CCE700A457A7 /* EnhancedTimerTest.swift */,
+				17C3C8442313CCE700A457A7 /* Info.plist */,
+				17C3C84D2313D03000A457A7 /* DataStorePagerTests.swift */,
+				17C3C84F2313D5D800A457A7 /* RecipeManagerTests.swift */,
+			);
+			path = BusinessUseCasesTests;
+			sourceTree = "<group>";
+		};
 		17E346442311236C00B625EB = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +590,7 @@
 				177B1C1123112C1600B2ABE5 /* RepositoryTests */,
 				177B1C2723112C3100B2ABE5 /* Domain */,
 				17A586B92312A00200E866F8 /* BusinessUseCases */,
+				17C3C8412313CCE700A457A7 /* BusinessUseCasesTests */,
 				17E3464E2311236C00B625EB /* Products */,
 				44FC8135F6BDC9A8BEC13717 /* Pods */,
 				71BE4B554AA495304CC178D4 /* Frameworks */,
@@ -532,6 +606,7 @@
 				177B1C2623112C3100B2ABE5 /* Domain.framework */,
 				177B1C5D231275FB00B2ABE5 /* UserInterface.framework */,
 				17A586B82312A00200E866F8 /* BusinessUseCases.framework */,
+				17C3C8402313CCE700A457A7 /* BusinessUseCasesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -715,6 +790,25 @@
 			productReference = 17A586B82312A00200E866F8 /* BusinessUseCases.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		17C3C83F2313CCE700A457A7 /* BusinessUseCasesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C3C8482313CCE700A457A7 /* Build configuration list for PBXNativeTarget "BusinessUseCasesTests" */;
+			buildPhases = (
+				17C3C83C2313CCE700A457A7 /* Sources */,
+				17C3C83D2313CCE700A457A7 /* Frameworks */,
+				17C3C83E2313CCE700A457A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17C3C8472313CCE700A457A7 /* PBXTargetDependency */,
+				17C3C84C2313CE8100A457A7 /* PBXTargetDependency */,
+			);
+			name = BusinessUseCasesTests;
+			productName = BusinessUseCasesTests;
+			productReference = 17C3C8402313CCE700A457A7 /* BusinessUseCasesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		17E3464C2311236C00B625EB /* BrewdogBeerChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17E3465F2311236D00B625EB /* Build configuration list for PBXNativeTarget "BrewdogBeerChallenge" */;
@@ -769,6 +863,10 @@
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1030;
 					};
+					17C3C83F2313CCE700A457A7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 17E3464C2311236C00B625EB;
+					};
 					17E3464C2311236C00B625EB = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -793,6 +891,7 @@
 				177B1C2523112C3100B2ABE5 /* Domain */,
 				177B1C5C231275FB00B2ABE5 /* UserInterface */,
 				17A586B72312A00200E866F8 /* BusinessUseCases */,
+				17C3C83F2313CCE700A457A7 /* BusinessUseCasesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -824,6 +923,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1728F47C231280A5006DB955 /* BeersViewController.xib in Resources */,
+				17C3C8342313205700A457A7 /* RecipeStepTableViewCell.xib in Resources */,
 				17A586CE2312AE1300E866F8 /* BeerTableViewCell.xib in Resources */,
 				17A586B223129C8F00E866F8 /* BeerDetailsViewController.xib in Resources */,
 				1728F48523128D66006DB955 /* Media.xcassets in Resources */,
@@ -832,6 +932,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		17A586B62312A00200E866F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C3C83E2313CCE700A457A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1023,6 +1130,7 @@
 				1728F482231284C9006DB955 /* BeersViewModel.swift in Sources */,
 				1728F46B23127BA9006DB955 /* SplashViewController.swift in Sources */,
 				1728F47223127EDF006DB955 /* BeersContainer.swift in Sources */,
+				17C3C8332313205700A457A7 /* RecipeStepTableViewCell.swift in Sources */,
 				17A586AC23129A2900E866F8 /* BeerDetailsNavigator.swift in Sources */,
 				17A586D52312B07400E866F8 /* NSObject+Utils.swift in Sources */,
 				1728F47F231280CB006DB955 /* BeersNavigator.swift in Sources */,
@@ -1034,8 +1142,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C3C8372313255800A457A7 /* RecipeManager.swift in Sources */,
+				17C3C83B2313C9D300A457A7 /* CountdownTimer.swift in Sources */,
 				17A586C52312A01400E866F8 /* BusinessUseCasesContainer.swift in Sources */,
 				17A586C82312A04900E866F8 /* DataStorePager.swift in Sources */,
+				17C3C8392313B3FB00A457A7 /* RecipeStep.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C3C83C2313CCE700A457A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C3C8432313CCE700A457A7 /* EnhancedTimerTest.swift in Sources */,
+				17C3C84E2313D03000A457A7 /* DataStorePagerTests.swift in Sources */,
+				17C3C8502313D5D800A457A7 /* RecipeManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1080,6 +1201,16 @@
 			isa = PBXTargetDependency;
 			target = 17A586B72312A00200E866F8 /* BusinessUseCases */;
 			targetProxy = 17A586BD2312A00200E866F8 /* PBXContainerItemProxy */;
+		};
+		17C3C8472313CCE700A457A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17A586B72312A00200E866F8 /* BusinessUseCases */;
+			targetProxy = 17C3C8462313CCE700A457A7 /* PBXContainerItemProxy */;
+		};
+		17C3C84C2313CE8100A457A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17E3464C2311236C00B625EB /* BrewdogBeerChallenge */;
+			targetProxy = 17C3C84B2313CE8100A457A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1377,6 +1508,44 @@
 			};
 			name = Release;
 		};
+		17C3C8492313CCE700A457A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				INFOPLIST_FILE = BusinessUseCasesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.BusinessUseCasesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrewdogBeerChallenge.app/BrewdogBeerChallenge";
+			};
+			name = Debug;
+		};
+		17C3C84A2313CCE700A457A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				INFOPLIST_FILE = BusinessUseCasesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.BusinessUseCasesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrewdogBeerChallenge.app/BrewdogBeerChallenge";
+			};
+			name = Release;
+		};
 		17E3465D2311236D00B625EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1577,6 +1746,15 @@
 			buildConfigurations = (
 				17A586C22312A00200E866F8 /* Debug */,
 				17A586C32312A00200E866F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17C3C8482313CCE700A457A7 /* Build configuration list for PBXNativeTarget "BusinessUseCasesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C3C8492313CCE700A457A7 /* Debug */,
+				17C3C84A2313CCE700A457A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

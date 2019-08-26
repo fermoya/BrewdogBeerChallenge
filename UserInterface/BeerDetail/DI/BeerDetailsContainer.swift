@@ -7,19 +7,22 @@
 //
 
 import Foundation
+import BusinessUseCases
 
 protocol BeerDetailsViewControllerProvider: ViewControllerProvider { }
 
 final class BeerDetailsContainer {
     
     private let navigationController: UINavigationController
+    private let businessUseCasesContainer: BusinessUseCasesContainer
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, businessUseCasesContainer: BusinessUseCasesContainer) {
         self.navigationController = navigationController
+        self.businessUseCasesContainer = businessUseCasesContainer
     }
     
     var viewModel: BeerDetailsViewModel {
-        return BeerDetailsViewModel()
+        return BeerDetailsViewModel(recipeManagerBuilder: businessUseCasesContainer.recipeManagerBuilder)
     }
     
     var viewController: UIViewController {

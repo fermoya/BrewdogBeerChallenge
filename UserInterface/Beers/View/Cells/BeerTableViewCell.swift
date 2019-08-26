@@ -33,7 +33,6 @@ class BeerTableViewCell: UITableViewCell {
 
     override func didMoveToWindow() {
         super.didMoveToWindow()
-        
         semiCircleLayer.fillColor = UIColor.darkGray.cgColor
     }
     

@@ -20,9 +20,11 @@ public class PunkApiWebservice: DataStore {
             guard let self = self else { return }
             let error = self.findErrors(in: dataResponse)
             guard error == nil else { return completion(.failure(error!)) }
-            guard let data = dataResponse.data, let beers = try? JSONDecoder().decode([Beer].self, from: data) else {
+            guard let data = dataResponse.data else {
                 return completion(.failure(.unknown("Empty response")))
             }
+            
+            let beers = try! JSONDecoder().decode([Beer].self, from: data)
             
             completion(.success(beers))
         }

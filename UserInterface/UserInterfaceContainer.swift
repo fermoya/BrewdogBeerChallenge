@@ -18,7 +18,7 @@ public final class UserInterfaceContainer {
     private var navigationController: UINavigationController
     private var businessUseCasesContainer: BusinessUseCasesContainer
     
-    private(set) lazy var beerDetailContainer = BeerDetailsContainer(navigationController: navigationController)
+    private(set) lazy var beerDetailContainer = BeerDetailsContainer(navigationController: navigationController, businessUseCasesContainer: businessUseCasesContainer)
     private(set) lazy var splashContainer = SplashContainer(beersContainer: beersContainer)
     private(set) lazy var beersContainer = BeersContainer(navigationController: navigationController, businessUseCasesContainer: businessUseCasesContainer, detailsContainer: beerDetailContainer)
     

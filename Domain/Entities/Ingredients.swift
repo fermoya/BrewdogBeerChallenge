@@ -31,7 +31,7 @@ public struct Malt {
 }
 
 public enum Timing: String {
-    case start, middle, end
+    case start, middle, end, none
 }
 
 public struct Hop {
