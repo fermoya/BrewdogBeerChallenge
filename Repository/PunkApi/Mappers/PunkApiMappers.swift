@@ -25,11 +25,11 @@ extension Beer: Decodable {
         let abv = try! container.decode(Float.self, forKey: .abv)
         let description = try! container.decode(String.self, forKey: .description)
         let tagLine = try! container.decode(String.self, forKey: .tagLine)
-        let imageUrl = try! container.decode(String.self, forKey: .imageUrl)
+        let imageUrl = try? container.decode(String.self, forKey: .imageUrl)
         let brewMethod = try! container.decode(BrewMethod.self, forKey: .brewMethod)
         let ingredients = try! container.decode(Ingredients.self, forKey: .ingredients)
         
-        self.init(id: id, tagLine: tagLine, name: name, abv: abv, description: description, imageUrl: imageUrl, brewMethod: brewMethod, ingredients: ingredients)
+        self.init(id: id, tagLine: tagLine, name: name, abv: abv, description: description, imageUrl: imageUrl ?? "", brewMethod: brewMethod, ingredients: ingredients)
     }
 }
 
@@ -44,9 +44,9 @@ extension Ingredients: Decodable {
         let container = try! decoder.container(keyedBy: CodingKeys.self)
         let malts = try! container.decode([Malt].self, forKey: .malts)
         let hops = try! container.decode([Hop].self, forKey: .hops)
-        let yeast = try! container.decode(String.self, forKey: .yeast)
+        let yeast = try? container.decode(String.self, forKey: .yeast)
         
-        self.init(malts: malts, hops: hops, yeast: yeast)
+        self.init(malts: malts, hops: hops, yeast: yeast ?? "")
     }
 }
 
@@ -134,10 +134,10 @@ extension Measure: Decodable {
     
     public init(from decoder: Decoder) throws {
         let container = try! decoder.container(keyedBy: CodingKeys.self)
-        let value = try! container.decode(Float.self, forKey: .value)
+        let value = try? container.decode(Float.self, forKey: .value)
         let measureType = try! container.decode(String.self, forKey: .measureType)
         
-        self.init(value: value, measureType: MeasureType(rawValue: measureType) ?? .none)
+        self.init(value: value ?? 0, measureType: MeasureType(rawValue: measureType) ?? .none)
     }
 }
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="RecipeStepTableViewCell" customModule="UserInterface" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="70.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lr-KA-XNo">
+                        <rect key="frame" x="20" y="15" width="243" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJa-JP-0n4">
+                        <rect key="frame" x="271" y="21.5" width="100" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="ZGc-M7-Ig7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
+                        <state key="normal" title="RUNNING">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapCheckButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vw8-Po-6bW"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS0-Gv-Sek">
+                        <rect key="frame" x="20" y="37.5" width="243" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZJa-JP-0n4" firstAttribute="leading" secondItem="7lr-KA-XNo" secondAttribute="trailing" constant="8" id="2gy-Mh-KhT"/>
+                    <constraint firstItem="SS0-Gv-Sek" firstAttribute="leading" secondItem="7lr-KA-XNo" secondAttribute="leading" id="3tH-oH-HQp"/>
+                    <constraint firstAttribute="trailing" secondItem="ZJa-JP-0n4" secondAttribute="trailing" constant="16" id="LVK-Kf-g8u"/>
+                    <constraint firstItem="SS0-Gv-Sek" firstAttribute="trailing" secondItem="7lr-KA-XNo" secondAttribute="trailing" id="OfX-MQ-OvY"/>
+                    <constraint firstAttribute="bottom" secondItem="SS0-Gv-Sek" secondAttribute="bottom" constant="15" id="X20-aS-k5v"/>
+                    <constraint firstItem="SS0-Gv-Sek" firstAttribute="top" secondItem="7lr-KA-XNo" secondAttribute="bottom" constant="3" id="YN7-B9-Vbe"/>
+                    <constraint firstItem="ZJa-JP-0n4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gl0-Lf-JR6"/>
+                    <constraint firstItem="7lr-KA-XNo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="xD1-AY-yc4"/>
+                    <constraint firstItem="7lr-KA-XNo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zDz-W3-ST5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkButton" destination="ZJa-JP-0n4" id="HCw-IZ-zF5"/>
+                <outlet property="descriptionLabel" destination="SS0-Gv-Sek" id="fQp-30-4Ss"/>
+                <outlet property="nameLabel" destination="7lr-KA-XNo" id="J63-CN-WK5"/>
+            </connections>
+            <point key="canvasLocation" x="186.23188405797103" y="94.084821428571431"/>
+        </tableViewCell>
+    </objects>
+</document>
