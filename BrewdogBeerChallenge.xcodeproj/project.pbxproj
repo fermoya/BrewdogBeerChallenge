@@ -419,8 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				177B1C4523113E1400B2ABE5 /* PunkApi */,
-				177B1C0523112C1600B2ABE5 /* Repository.h */,
-				177B1C0623112C1600B2ABE5 /* Info.plist */,
+				17C3C8512314F37F00A457A7 /* Support */,
 				177B1C3423112D1700B2ABE5 /* DataStore.swift */,
 				1728F47323127F7F006DB955 /* RepositoryContainer.swift */,
 			);
@@ -439,8 +438,7 @@
 		177B1C2723112C3100B2ABE5 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				177B1C2823112C3100B2ABE5 /* Domain.h */,
-				177B1C2923112C3100B2ABE5 /* Info.plist */,
+				17C3C8522314F3BC00A457A7 /* Support */,
 				17A586D22312AEAD00E866F8 /* Entities */,
 				17A586D12312AEA400E866F8 /* Extensions */,
 			);
@@ -508,8 +506,7 @@
 			children = (
 				17C3C8352313253600A457A7 /* Recipe */,
 				17A586C62312A02C00E866F8 /* DataStorePager */,
-				17A586BA2312A00200E866F8 /* BusinessUseCases.h */,
-				17A586BB2312A00200E866F8 /* Info.plist */,
+				17C3C8532314F3DE00A457A7 /* Support */,
 				17A586C42312A01400E866F8 /* BusinessUseCasesContainer.swift */,
 			);
 			path = BusinessUseCases;
@@ -579,6 +576,33 @@
 				17C3C84F2313D5D800A457A7 /* RecipeManagerTests.swift */,
 			);
 			path = BusinessUseCasesTests;
+			sourceTree = "<group>";
+		};
+		17C3C8512314F37F00A457A7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				177B1C0523112C1600B2ABE5 /* Repository.h */,
+				177B1C0623112C1600B2ABE5 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		17C3C8522314F3BC00A457A7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				177B1C2823112C3100B2ABE5 /* Domain.h */,
+				177B1C2923112C3100B2ABE5 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		17C3C8532314F3DE00A457A7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				17A586BA2312A00200E866F8 /* BusinessUseCases.h */,
+				17A586BB2312A00200E866F8 /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		17E346442311236C00B625EB = {
@@ -1239,7 +1263,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Repository/Info.plist;
+				INFOPLIST_FILE = Repository/Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1270,7 +1294,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Repository/Info.plist;
+				INFOPLIST_FILE = Repository/Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1341,7 +1365,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Domain/Info.plist;
+				INFOPLIST_FILE = Domain/Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1371,7 +1395,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Domain/Info.plist;
+				INFOPLIST_FILE = Domain/Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1461,7 +1485,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BusinessUseCases/Info.plist;
+				INFOPLIST_FILE = BusinessUseCases/Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1491,7 +1515,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BusinessUseCases/Info.plist;
+				INFOPLIST_FILE = BusinessUseCases/Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
