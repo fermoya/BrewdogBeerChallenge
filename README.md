@@ -21,6 +21,9 @@ The architecture allows to Unit Test the different components of the App. I've c
 
 Tests don't probably have a 100% coverage since that's hard to achieve and one could wonder if it's worth the effort to get such a percentage as even with 100% coverage bugs will still exist. For the purpose of the challenge, I've implemented several tests that have actually helped me implement the business components.
 
+### GitFlow
+In this repository, I've tried to use GitFlow Guidlines: branches come from master, are merged in develop and finally develop is merged into master. There's only one merge in this repo where I accidentally merged the branch directly into master. This could be done for hotfixes but this wasn't the case.
+
 ### UI
 The starting point is a *Splash* view controller whose only purpose is to create a beautiful reveal animation to take us to the next screen, *Beers* list. 
 
@@ -36,3 +39,4 @@ Finally, in this scene we find a bit of extra information about the beer itself,
 - The way I bindi the cells in the *Detail* scene doesn't convinced me very much.
 - There aren't many comments in the code. I believe comments should be restricted to what's really necessary as "clean code speaks itself".
 - Regarding the UI, I've chosen several approaches to do the same, for example, the background of the ABV label. I've done so to prove I'm familiar with layers and Core Animation and that I like coding simple UIViews that consist of multiple layers.
+- Magic numbers should be erased from the project. Regarding colors, fonts, strings and the like, I usually recommend having a file with static values called *Colors*, *Fonts*, ... If targets are needed, you can easily change the whole design of an App by choosing a different file to compile for that new target.
