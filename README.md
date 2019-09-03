@@ -33,10 +33,7 @@ Finally, in this scene we find a bit of extra information about the beer itself,
 
 **Known issues**
 
-- The property animator in BeersViewController fails to animate after we go back from the detail scene. Besides, the animation should be polished up as it doesn't really work as expected.
-- Table View Cells have a static height and this should be retrieved from a property on the table view to calculate its height. So, the "magic number" should be substituted.
-- In the splash scene there are several issues. One is that when transitioning to the next scene you can actually see a BrewDog logo increasing its size and another one staying where it was at the begining of the animation. I liked the effect so I didn't look into it. The other issue is that the background image is huge for such a screen. The App is just a sample and even though I haven't thought of it to fit any other screen size, I liked the idea that that scene would look good within a different device.
-- The way I bindi the cells in the *Detail* scene doesn't convinced me very much.
-- There aren't many comments in the code. I believe comments should be restricted to what's really necessary as "clean code speaks itself".
+- In the splash scene, the background image is huge for such a screen. The App is just a sample and even though I haven't thought of it to fit any other screen size, I liked the idea that that scene would look good within a different device.
+- There aren't many comments in the code. I believe comments should be restricted to what's really necessary as "clean code speaks by itself".
 - Regarding the UI, I've chosen several approaches to do the same, for example, the background of the ABV label. I've done so to prove I'm familiar with layers and Core Animation and that I like coding simple UIViews that consist of multiple layers.
 - Magic numbers should be erased from the project. Regarding colors, fonts, strings and the like, I usually recommend having a file with static values called *Colors*, *Fonts*, ... If targets are needed, you can easily change the whole design of an App by choosing a different file to compile for that new target.

@@ -13,9 +13,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeersViewController" customModule="UserInterface" customModuleProvider="target">
             <connections>
                 <outlet property="beersTableView" destination="XBd-zf-VRw" id="P90-On-GyQ"/>
+                <outlet property="heightTitleLabel" destination="Kzq-cR-wxP" id="rNW-d5-IAP"/>
+                <outlet property="leadingTitleLabel" destination="crU-Dm-Z2w" id="q1D-ap-taS"/>
                 <outlet property="titleLabel" destination="wme-4C-wq0" id="oLq-N6-IWb"/>
-                <outlet property="topConstraintBeersTableView" destination="bss-RP-Bx7" id="8Fq-Qd-AKB"/>
+                <outlet property="topTitleLabel" destination="FV6-cu-1mX" id="YEw-CJ-9hw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="widthTitleLabel" destination="t8T-S7-3vc" id="tY1-4e-lcA"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -24,8 +27,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brewdog Distillery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wme-4C-wq0">
-                    <rect key="frame" x="16" y="76" width="279" height="38.5"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                    <rect key="frame" x="16" y="76" width="272" height="38.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38.5" id="Kzq-cR-wxP"/>
+                        <constraint firstAttribute="width" constant="272" id="t8T-S7-3vc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -34,12 +41,12 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="wme-4C-wq0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="FV6-cu-1mX"/>
+                <constraint firstItem="XBd-zf-VRw" firstAttribute="top" secondItem="wme-4C-wq0" secondAttribute="bottom" constant="15.5" id="I6h-oy-MPd"/>
                 <constraint firstItem="XBd-zf-VRw" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="WLc-M2-mme"/>
                 <constraint firstAttribute="bottom" secondItem="XBd-zf-VRw" secondAttribute="bottom" id="WaR-K5-6AD"/>
-                <constraint firstItem="XBd-zf-VRw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="130" id="bss-RP-Bx7"/>
                 <constraint firstItem="wme-4C-wq0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="crU-Dm-Z2w"/>
                 <constraint firstItem="XBd-zf-VRw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uoa-F9-ANF"/>
             </constraints>

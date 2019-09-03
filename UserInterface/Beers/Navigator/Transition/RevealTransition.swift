@@ -13,11 +13,17 @@ class RevealTransition: NSObject, UIViewControllerAnimatedTransitioning {
     private var transitionContext: UIViewControllerContextTransitioning?
     var duration: TimeInterval = 1
     
-    private var snapshot: CALayer
+    private var sourceImageLayer: CALayer
     private var fromViewSnapshot: UIView!
+    private var fromViewSecondSnapshot: UIView!
     
     init(view: UIImageView) {
-        self.snapshot = view.layer
+        sourceImageLayer = CAShapeLayer()
+        sourceImageLayer.frame = view.frame
+        sourceImageLayer.contents = view.image?.cgImage
+        
+        // In case the image has transparent pixels
+        view.isHidden = true
     }
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
@@ -33,11 +39,18 @@ class RevealTransition: NSObject, UIViewControllerAnimatedTransitioning {
         transitionContext.containerView.bringSubviewToFront(toView)
         self.transitionContext = transitionContext
         
-//        toView.layer.mask = snapshot
+        // We take this snapshot to cover the next view. This one will contain the source image view as it is taken before the screen updates
         fromViewSnapshot = fromView.snapshotView(afterScreenUpdates: false)!
         fromViewSnapshot.frame = fromView.frame
+        
+        // We take a second snapshot after the screen updates so that the source image view is hidden. This snapshot will cover the previous one. This way we prevent a glitch on the transition
+        fromViewSecondSnapshot = fromView.snapshotView(afterScreenUpdates: true)!
+        fromViewSecondSnapshot.frame = fromViewSnapshot.frame
+        
+        fromViewSecondSnapshot.layer.addSublayer(sourceImageLayer)
+        
         toView.addSubview(fromViewSnapshot)
-        toView.layer.addSublayer(snapshot)
+        toView.addSubview(fromViewSecondSnapshot)
         
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
         scaleAnimation.duration = duration
@@ -46,7 +59,7 @@ class RevealTransition: NSObject, UIViewControllerAnimatedTransitioning {
         scaleAnimation.toValue = 15
         scaleAnimation.timingFunction = CAMediaTimingFunction(name: .easeIn)
         scaleAnimation.isRemovedOnCompletion = true
-        snapshot.add(scaleAnimation, forKey: nil)
+        sourceImageLayer.add(scaleAnimation, forKey: nil)
         
         let fadeAnimation = CAKeyframeAnimation(keyPath: "opacity")
         fadeAnimation.duration = duration
@@ -56,8 +69,9 @@ class RevealTransition: NSObject, UIViewControllerAnimatedTransitioning {
         fadeAnimation.keyTimes = [0.5, 1]
         fadeAnimation.timingFunction = CAMediaTimingFunction(name: .easeOut)
         
-        snapshot.add(fadeAnimation, forKey: nil)
+        sourceImageLayer.add(fadeAnimation, forKey: nil)
         fromViewSnapshot.layer.add(fadeAnimation, forKey: nil)
+        fromViewSecondSnapshot.layer.add(fadeAnimation, forKey: nil)
     }
     
 }
@@ -71,8 +85,9 @@ extension RevealTransition: CAAnimationDelegate {
         toView.layer.mask = nil
         
         context.completeTransition(!context.transitionWasCancelled)
-        snapshot.removeFromSuperlayer()
+        sourceImageLayer.removeFromSuperlayer()
         fromViewSnapshot.removeFromSuperview()
+        fromViewSecondSnapshot.removeFromSuperview()
         toView.layer.removeAllAnimations()
         
         self.transitionContext = nil
