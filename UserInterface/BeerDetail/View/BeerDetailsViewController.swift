@@ -86,7 +86,7 @@ class BeerDetailsViewController: UIViewController {
         tagLineLabel.text = beer.tagLine
         
         let headerHeight = detailsTableView.sectionHeaderHeight
-        let rowHeight: CGFloat = 71
+        let rowHeight: CGFloat = detailsTableView.rowHeight
         
         let numberOfRows = CGFloat(beer.ingredients.hops.count + beer.ingredients.malts.count + beer.brewMethod.recipe.count)
         let numberOfSections: CGFloat = 3
