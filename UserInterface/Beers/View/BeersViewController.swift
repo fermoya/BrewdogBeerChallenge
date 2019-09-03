@@ -11,8 +11,11 @@ import Domain
 
 class BeersViewController: UIViewController {
 
+    @IBOutlet weak var leadingTitleLabel: NSLayoutConstraint!
+    @IBOutlet weak var topTitleLabel: NSLayoutConstraint!
+    @IBOutlet weak var heightTitleLabel: NSLayoutConstraint!
+    @IBOutlet weak var widthTitleLabel: NSLayoutConstraint!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var topConstraintBeersTableView: NSLayoutConstraint!
     private var viewModel: BeersViewModel
     private var beers: [Beer]! {
         didSet {
@@ -22,6 +25,7 @@ class BeersViewController: UIViewController {
     
     @IBOutlet weak var beersTableView: UITableView! {
         didSet {
+            beersTableView.isHidden = true
             beersTableView.register(UINib(nibName: BeerTableViewCell.className,
                                           bundle: Bundle(for: type(of: self))),
                                     forCellReuseIdentifier: BeerTableViewCell.className)
@@ -46,7 +50,6 @@ class BeersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        
         viewModel.fetchNewBeers()
     }
     
@@ -59,6 +62,7 @@ class BeersViewController: UIViewController {
     private func bindViewModel() {
         viewModel.didObserveNewItems = { [weak self] beers in
             guard let self = self else { return }
+            self.beersTableView.isHidden = false
             let beersCount = self.beers?.count ?? 0
             guard beers.count > beersCount else { return }
             self.beers = beers
@@ -69,29 +73,41 @@ class BeersViewController: UIViewController {
         guard propertyAnimator.isEmpty else { return }
         
         propertyAnimator = UIViewPropertyAnimator(duration: 1, curve: .easeInOut)
+        propertyAnimator.pausesOnCompletion = true
         
-        let label = UILabel(frame: .zero)
-        label.text = titleLabel.text
-        label.font = titleLabel.font
-        label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
-        label.sizeToFit()
+        let smallTextSize = (titleLabel.text! as NSString).size(withAttributes: [.font: UIFont.systemFont(ofSize: 14, weight: .bold)])
         
-        let destination = CGPoint(x: (UIScreen.main.bounds.width - label.frame.width) / 2,
-                                  y: (view.safeAreaInsets.top + 44 - label.frame.height) / 2)
+        takeSnapshot()
         
-        let transform = CGAffineTransform(translationX: destination.x - titleLabel.frame.origin.x,
-                                          y: destination.y - titleLabel.frame.origin.y)
-            .concatenating(CGAffineTransform(scaleX: label.bounds.width / titleLabel.bounds.width,
-                                             y: label.bounds.height / titleLabel.bounds.height))
+        titleLabel.isHidden = true
         
-        self.topConstraintBeersTableView.constant = view.safeAreaInsets.top + 60
+        widthTitleLabel.constant = smallTextSize.width
+        heightTitleLabel.constant = smallTextSize.height
+        leadingTitleLabel.constant = (UIScreen.main.bounds.width - smallTextSize.width) / 2
+        topTitleLabel.constant = 0
+        
         propertyAnimator.addAnimations { [weak self] in
-            self?.titleLabel.transform = transform
-            self?.view.layoutSubviews()
+            self?.view.layoutIfNeeded()
         }
         
         propertyAnimator.startAnimation()
         propertyAnimator.pauseAnimation()
+    }
+    
+    // Text in titleLabel doesn't resize with the label
+    private func takeSnapshot() {
+        let labelImage = titleLabel.snapshotView(afterScreenUpdates: false)!
+        labelImage.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(labelImage)
+        
+        view.addConstraints([
+            labelImage.topAnchor.constraint(equalTo: titleLabel.topAnchor),
+            labelImage.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
+            labelImage.widthAnchor.constraint(equalTo: titleLabel.widthAnchor),
+            labelImage.heightAnchor.constraint(equalTo: titleLabel.heightAnchor)
+            ])
+        
+        self.view.layoutIfNeeded()
     }
 }
 
